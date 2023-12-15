@@ -1,0 +1,11 @@
+dev:
+  commands:
+  - command: yarn install --frozen-lockfile
+    directory: build-standalone-expo-app
+    name: install cmd
+  name: "testrcsl"
+  packages:
+  - nixpkgs.nodePackages.yarn
+  - nixpkgs.nodejs_18
+  repos:
+  - https://github.com/RobinCsl/build-standalone-expo-app
